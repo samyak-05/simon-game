@@ -243,4 +243,33 @@ p {
     }
 }
 
+.how-to-play {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background-color: #3498db;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.how-to-play:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 480px) {
+  .how-to-play {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+    bottom: 15px;
+    left: 15px;
+  }
+}
 
