@@ -2,7 +2,7 @@
 
 A browser-based memory game built with HTML, CSS, and JavaScript. Test your memory skills by repeating randomly generated sequences of button presses. Each round adds a new step to the sequence — how long can you keep up?
 
-[Play Live ➜]() 
+[Play Live ➜](https://simon-game-sigma-nine.vercel.app/) 
 
 ---
 
