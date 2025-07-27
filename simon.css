@@ -1,0 +1,95 @@
+body{
+    background-color: wheat;
+    text-align: center;
+
+}
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #2e7d32;
+    text-shadow: 2px 2px 10px rgba(0, 128, 0, 0.3);
+    text-align: center;
+    margin-top: 30px;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    color: #1b5e20;
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(34, 139, 34, 0.2);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.game{
+    margin: auto;
+   display: flex;
+   flex-wrap: wrap;
+   height: 500px;
+   width: 500px;
+}
+
+#box{
+    height: 200px;
+    width: 200px;
+    border: 4px solid black;
+    margin: 20px;
+    border-radius: 40px;
+ 
+}
+
+.one{
+    background-color: #D94C73;
+}
+
+.two{
+    background-color: #4BA3A6;
+}
+
+.three{
+    background-color: #F99B2A;
+}
+
+.four{
+    background-color: #7A90F2;
+}
+
+.flash{
+    background-color: aliceblue;
+}
+
+.scores {
+    background: linear-gradient(135deg, #7fffd4, #40e0d0);
+    height: 100px;
+    width: 250px;
+    position: absolute;
+    top: 20px;
+    left: 1200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #004d40;
+
+    transition: all 0.3s ease-in-out;
+    padding: 10px;
+    text-align: center;
+}
+
+.green{
+    background-color: green;
+}
