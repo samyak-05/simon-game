@@ -120,6 +120,8 @@ function findHighest(score){
 
 restart.addEventListener("click",function(){
     reset();
-    started=true;
+    scores.innerHTML = `Score: ${score} <br> Highest Score: ${highestScore}`; 
+    p.innerText = `Level ${level}`; 
+    started = true;
     levelUp();
 });
