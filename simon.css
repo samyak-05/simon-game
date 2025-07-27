@@ -185,43 +185,61 @@ p {
 /* ----------- Mobile View ----------- */
 @media (max-width: 600px) {
     h1 {
-        font-size: 28px;
+        font-size: 6vw;
+        margin-top: 20px;
     }
 
     p {
-        font-size: 16px;
+        font-size: 4vw;
+        margin-top: 10px;
     }
 
     .game {
-        width: 100%;
-        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        margin: 30px auto;
     }
 
     #box {
         width: 40vw;
         height: 40vw;
-        margin: 8px;
+        border-radius: 20px;
     }
 
     .scores {
-        bottom: 140px;
+        position: fixed;
+        bottom: 100px;
         left: 50%;
         transform: translateX(-50%);
         width: 80vw;
         font-size: 14px;
+        padding: 12px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        z-index: 10;
     }
 
     .start, .restart {
-        bottom: 60px;
         position: fixed;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 14px;
-        padding: 10px 20px;
+        width: 50vw;
+        font-size: 16px;
+        padding: 12px 0;
+        border-radius: 20px;
+        text-align: center;
+        z-index: 11;
+    }
+
+    .start {
+        bottom: 40px;
     }
 
     .restart {
-        bottom: 10px;
+        bottom: 40px;
     }
 }
 
