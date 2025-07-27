@@ -1,6 +1,8 @@
 let p= document.querySelector("p");
 let h1= document.querySelector("h1");
 let scores= document.querySelector(".scores");
+let start= document.querySelector(".start");
+let restart = document.querySelector(".restart");
 let btns=["one","two","three","four"];
 
 //Keeping track of displayed colors
@@ -14,11 +16,14 @@ let level=0;
 let started=false;
 scores.innerHTML=`Score: ${score} <br> Highest Score: ${highestScore} `;
 
-document.addEventListener("keypress",function(){
+start.addEventListener("click",function(){
     if(started == false){
         alert("Game started!");
         started=true;
-        levelUp();
+        setTimeout(levelUp,2000);//
+        restart.style.display = "inline-block";  //
+        start.style.display = "none"; //
+        
     }
 });
 
@@ -63,13 +68,15 @@ function checkAns(idx){
 
     else{
 
-        p.innerText=`GAME OVER! Your Score was: ${score} Press any key to start again.`;
+        p.innerText=`GAME OVER! Your Score was: ${score} Click START button to play again.`;
         document.querySelector("body").style.backgroundColor="red";
         setTimeout(()=>{
             document.querySelector("body").style.backgroundColor="wheat";
         },200);
         reset();
         scores.innerHTML = `Score: ${score} <br> Highest Score: ${highestScore}`;
+        start.style.display = "inline-block";  //
+        restart.style.display = "none"; //
     }
 }
 
@@ -110,3 +117,9 @@ function findHighest(score){
         highestScore=highestScore;
     }
 }
+
+restart.addEventListener("click",function(){
+    reset();
+    started=true;
+    levelUp();
+});
