@@ -20,7 +20,7 @@ start.addEventListener("click",function(){
     if(started == false){
        
         started=true;
-        setTimeout(levelUp,2000);//
+        setTimeout(levelUp,1000);//
         restart.style.display = "inline-block";  //
         start.style.display = "none"; //
         
