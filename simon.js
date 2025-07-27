@@ -18,7 +18,7 @@ scores.innerHTML=`Score: ${score} <br> Highest Score: ${highestScore} `;
 
 start.addEventListener("click",function(){
     if(started == false){
-        alert("Game started!");
+       
         started=true;
         setTimeout(levelUp,2000);//
         restart.style.display = "inline-block";  //
